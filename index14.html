@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTER</title>
+    <style>
+        /* element selector*/
+        div {
+            /* background-color: lightslategray; */
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        /* id selector*/
+        #green {
+            background-color: violet;
+        }
+
+        /* child selector */
+        div p {
+            color: darkred;
+            background-color: ivory;
+        }
+
+        /* universal slector*/
+        * {
+            margin: 0;
+            padding-bottom: 0;
+        }
+
+        /* psedo selector*/
+        a :visited {
+            color: blue;
+        }
+
+        a :link {
+            color: brown;
+        }
+
+        a :active {
+            background-color: red;
+        }
+        a :hover
+        {
+            background-color: maroon;
+        }
+        p :first-child
+        {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        i am dev
+        <p>I am para inzside them</p>
+
+    </div>
+    <div id="green">
+        belive in no bady
+
+    </div>
+    <a href="https://www.google.com">go to google</a>
+    <a href="https://www.instagram.com">open instagram</a>
+</body>
+
+</html>
