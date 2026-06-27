@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket</title>
+    <style>
+        body {
+            margin: 0%;
+            scrollbar-width: auto;
+        }
+
+        .header {
+            z-index: 100;
+            width: 1480px;
+            font-size: 20px;
+            display: flex;
+            padding: 10px 20px;
+            gap: 50px;
+            background-color: cornflowerblue;
+            list-style: none;
+            justify-content: space-between;
+            margin: 0%;
+            position: sticky;
+            top: 0%;
+        }
+
+        .header li:first-child {
+            margin-right: auto;
+        }
+
+        .box {
+            margin-top: 0%;
+            width: 1520px;
+            height: 400px;
+            background-color: chartreuse;
+        }
+
+        .boxes {
+            width: 1480px;
+            height: 400px;
+            font-size: 20px;
+            display: flex;
+            padding: 10px 20px;
+            gap: 50px;
+            background-color: green;
+            list-style: none;
+            justify-content: center;
+            top: 0%;
+
+        }
+
+        .boxes :first-child {
+            margin-top: 0px;
+            background-color: red;
+
+            width: 560px;
+            border-radius: 8px;
+            font-size: 30px;
+
+        }
+
+        .boxes :last-child {
+            margin-top: 0px;
+            background-color: red;
+
+            width: 560px;
+            border-radius: 8px;
+            font-size: 30px;
+
+        }
+
+        .black {
+            width: 1520px;
+            height: 70px;
+            margin: 0%;
+            background-color: black;
+            font-size: 18px;
+            color: white;
+        }
+
+        .black ul {
+            display: flex;
+            height: 30px;
+            list-style: none;
+            gap: 40px;
+            justify-content: center;
+            margin: 0%;
+        }
+
+        .bats {
+            width: 1480px;
+            font-size: 20px;
+            display: flex;
+            padding: 10px 20px;
+            gap: 50px;
+            background-color: blueviolet;
+            list-style: none;
+            justify-content: space-between;
+            margin: 0%;
+
+        }
+
+        .bats li :first-child {
+            margin-right: auto;
+        }
+
+        .bowler {
+            width: 1480px;
+            font-size: 20px;
+            display: flex;
+            padding: 10px 20px;
+            gap: 50px;
+            background-color: navy;
+            list-style: none;
+            justify-content: space-between;
+            margin: 0%;
+        }
+
+        .bowler li:first-child {
+            margin-right: auto;
+        }
+
+        .final {
+            background-color: greenyellow;
+            margin: 0px;
+        }
+
+        .final ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            margin: 0px;
+            padding: 10px 20px;
+        }
+        .liv-button
+        {
+            position: fixed;
+            z-index:999;
+            bottom: 20px;
+            right: 20px;
+            background: red;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 50%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="header">
+        <li>CricScore live</li>
+        <li>sechdule</li>
+        <li>rankig</li>
+        <li>News</li>
+    </ul>
+
+
+    <div class="boxes">
+        <li>In
+            <p>
+                India Batting
+            </p>
+            <h1>
+                287/4
+            </h1>
+            <h2>
+                44.2 over
+            </h2>
+            <h2>
+                Last 2 match win india of 4
+            </h2>
+        </li>
+        <li>Aus
+            <p>
+                Australia Bowlling
+            </p>
+            <h1>
+                - -
+            </h1>
+            <h2>
+                yet to bat
+            </h2>
+            <h2>
+                Last 1 match win india of 4
+            </h2>
+        </li>
+    </div>
+    <div class="black">
+        <ul class="list">
+            <li>CRR
+                <h2>
+                    5.93
+                </h2>
+            </li>
+            <li>RRR
+                <h2>
+                    8.20
+                </h2>
+            </li>
+
+            <li>Last 5 over
+                <h2>
+                    52 runs
+                </h2>
+            </li>
+            <li>Wicket left
+                <h2>
+                    6 wicket
+                </h2>
+            </li>
+        </ul>
+    </div>
+    <div class="bats">
+        <li>Batsman</li>
+        <div style="display:flex; gap:40px;">
+            <li>runs</li>
+            <li>balls</li>
+        </div>
+    </div>
+    <div class="bats">
+        <li>Virat kholi *</li>
+        <div style="display:flex; gap:40px;">
+            <li>260</li>
+            <li>150</li>
+        </div>
+    </div>
+    <div class="bats">
+        <li>Rohit sharma</li>
+        <div style="display:flex; gap:40px;">
+            <li>280</li>
+            <li>160</li>
+        </div>
+    </div>
+    <div class="bowler">
+        <li>Bowlers</li>
+        <div style="display:flex; gap:25px;">
+            <li>runs</li>
+            <li>balls</li>
+        </div>
+    </div>
+    <div class="bowler">
+        <li>pat cumins</li>
+        <div style="display:flex; gap:40px;">
+            <li>22</li>
+            <li>10</li>
+        </div>
+    </div>
+    <div class="bowler">
+        <li>Hazalwhood</li>
+        <div style="display:flex; gap:40px;">
+            <li>28</li>
+            <li>16</li>
+        </div>
+    </div>
+    <div class="bowler">
+        <li>Adam zampa</li>
+        <div style="display:flex; gap:40px;">
+            <li>24</li>
+            <li>16</li>
+        </div>
+    </div>
+    <div class="final">
+        <ul>
+            <li>
+                <span
+                    style="display:inline-block; width:10px; height:10px; background:red; border-radius:50%; margin-right:6px;"></span>
+                Live · IND needs 13 more runs from 10 balls
+            </li>
+            <li>
+                3rd ODI · Mumbai
+            </li>
+        </ul>
+    </div>
+    <div class="liv-button">
+        🔴 Live
+    </div>
+</body>
+
+</html>
