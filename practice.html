@@ -62,20 +62,39 @@
 
         .seven {
             display: flex;
-            gap: 200px;
-            width: 50%;
-            margin-left: 300px;
+            gap: 40px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
             height: auto;
             border-radius: 10px;
         }
 
+        .seven img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+
         .eight {
             display: flex;
-            gap: 200px;
-            width: 50%;
-            margin-left: 300px;
+            gap: 40px;
+            width: 67%;
+            margin-left: auto;
+            margin-right: auto;
             height: auto;
             border-radius: 10px;
+        }
+
+        .eight div {
+            flex: 1;
+
+        }
+
+        .eight img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
         }
 
         .nine {
@@ -180,31 +199,39 @@
 
         .thirteen {
             display: block;
-            margin-left: 800px;
+            margin-left: 200px;
             margin-top: 10px;
             justify-content: flex-end;
+            height: 400px;
+            width: 650px;
         }
 
         /*for last figur alligment not compulsory to use 
         but when i unable to changew class change and start use*/
         .forteen {
-            text-align: end;
-            margin-left: 50px;
-            font-size: 70px;
+            text-align: center;
+            margin-left: 100px;
+            font-size: 60px;
+            width: 660px;
+            ;
+            margin-right: 50px;
         }
 
         .fifteen {
             text-align: end;
-            margin-left: 50%;
+            margin-left: 150px;
             font-size: 25px;
             width: 560px;
         }
 
         .seventeen {
             display: block;
-            margin-right: 800px;
+            margin-right: 0px;
+            margin-left: 0%;
             margin-top: 10px;
-            justify-content: flex-start;
+            justify-content: flex-end;
+            width: 750px;
+            height: 400px;
         }
 
         .microsft {
@@ -282,16 +309,39 @@
             align-items: center;
             padding: 60px 40px;
             justify-content: space-between;
-            min-height: ;
+            min-height: auto;
         }
+
 
         .content {
             width: 45%;
+
         }
 
         .thirteen {
             width: 50%;
             border-radius: 10px;
+        }
+
+        .img {
+            margin-top: 0px;
+        }
+
+        .container img {
+            vertical-align: top;
+        }
+
+        .slection {
+            display: flex;
+            align-items: flex-end;
+            padding: 20px 40px;
+            justify-content: space-between;
+            min-height: auto;
+            flex-direction: row-reverse;
+        }
+
+        .img .contenttt {
+            vertical-align: top;
         }
     </style>
 </head>
@@ -316,7 +366,7 @@
     </h2>
     <h3 class="six">You get more for free when you sign in with your Microsoft account.
     </h3>
-    <d class="seven">
+    <div class="seven">
         <div>
             <img src="microsft365.png" alt="365 image">
             <h2>Microsoft 365 apps</h2>
@@ -331,8 +381,8 @@
                 Save your files and photos and access them from any device, anywhere.
             </p>
         </div>
-    </d>
-    <d class="eight">
+    </div>
+    <div class="eight">
         <div>
             <img src="rewards.png" alt="rewards png">
             <h2>Microsoft Rewards</h2>
@@ -348,7 +398,7 @@
             </p>
 
         </div>
-    </d>
+    </div>
     <h2 class="nine">Uniquely yours</h2>
     <h3 class="Ten">Take control of your data with privacy settings you can customize, and get personalized
         recommendations from
@@ -364,26 +414,32 @@
                 unusual
                 or suspicious account activity.
             </p>
-            <img class="thirteen" src="recomnded.png" alt="">
         </div>
+        <img class="thirteen" src="recomnded.png" alt="">
     </div>
-    <div>
-        <h2 class="forteen">
-            Break free from passwords
-        </h2>
-        <p class="fifteen">
-            Make your account even more secure with optional passwordless sign-in.
-        </p>
+    </div>
+    <div class="slection">
+        <div class="contenttt">
+            <h2 class="forteen">
+                Break free from passwords
+            </h2>
+            <p class="fifteen">
+                Make your account even more secure with optional passwordless sign-in.
+            </p>
+        </div>
         <img class="seventeen" src="Cloud-refresh.png" alt="claude">
     </div>
-    <div>
-        <h2 class="Eleven">
-            One place to manage it all
-        </h2>
-        <p class="Twelve">
-            Manage your account from a single dashboard, including payment information, purchases, subscriptions, and
-            more.
-        </p>
+    <div class="slectionhero">
+        <div class="content">
+            <h2 class="Eleven">
+                One place to manage it all
+            </h2>
+            <p class="Twelve">
+                Manage your account from a single dashboard, including payment information, purchases, subscriptions,
+                and
+                more.
+            </p>
+        </div>
         <img class="thirteen" src="account.png" alt="accont">
     </div>
 
@@ -395,33 +451,41 @@
         Whatever you’re doing, wherever you are, just go.
 
     </h3>
-    <div>
-        <h2 class="Eleven">
-            Sign in and go
-        </h2>
-        <p class="Twelve">
-            Your account profile and preferences sync across all your devices. Wherever you are, it’s all here.
-        </p>
+    <div class="slectionhero">
+        <div class="content">
+            <h2 class="Eleven">
+                Sign in and go
+            </h2>
+            <p class="Twelve">
+                Your account profile and preferences sync across all your devices. Wherever you are, it’s all here.
+            </p>
+        </div>
         <img class="thirteen" src="sign.png" alt="siging pae">
     </div>
-    <div>
-        <h2 class="forteen">
-            Pick up where you left off
-        </h2>
-        <p class="fifteen">
-            Your data is automatically synced to the cloud, so contacts, calendar, and files are always backed up, no
-            matter what device you’re on.
-        </p>
+    <div class="slection">
+        <div class="contenttt">
+            <h2 class="forteen">
+                Pick up where you left off
+            </h2>
+            <p class="fifteen">
+                Your data is automatically synced to the cloud, so contacts, calendar, and files are always backed up,
+                no
+                matter what device you’re on.
+            </p>
+        </div>
         <img class="seventeen" src="pick.png" alt="pick">
     </div>
-    <div>
-        <h2 class="Eleven">
-            Keep it in the family
-        </h2>
-        <p class="Twelve">
-            Easily create a family group and set parental controls like screen time limits and app filters for free with
-            Microsoft Family Safety.
-        </p>
+    <div class="slectionhero">
+        <div class="content">
+            <h2 class="Eleven">
+                Keep it in the family
+            </h2>
+            <p class="Twelve">
+                Easily create a family group and set parental controls like screen time limits and app filters for free
+                with
+                Microsoft Family Safety.
+            </p>
+        </div>
         <img class="thirteen" src="keep.png" alt="keep family">
     </div>
     <img src="c:\Users\offic\Downloads\main.svg" alt="microsoft">
