@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image designing</title>
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-color: navy;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            height: 730px;
+        }
+
+        .hero img {
+            display: block;
+            width: 100%;
+            height: ;
+        }
+
+        .dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            gap: 8px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+
+        .dotactive {
+            color: white;
+        }
+
+        .slides {
+            width: 400%;
+            height: 100%;
+            display: flex;
+            transition: transform 0.5s ease; ;
+        }
+
+        .slides img {
+            width: 25%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="slides" id="slides">
+            <img src="sex lfe.webp" alt="">
+            <img src="First-Love.jpeg" alt="">
+            <img src="middle class.webp" alt="">
+            <img src="ARMY.webp" alt="">
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="goTo(0)"></span>
+            <span class="dot"onclick="goTo(1)"></span>
+            <span class="dot " onclick="goTo(2)"></span>
+            <span class="dot" onclick="goTo(3)"></span>
+        </div>
+    </div>
+    <script>
+        let current = 0;
+
+        function goTo(index) {
+            current = index;
+            document.getElementById('slides').style.transform = `translateX(-${index * 25}%)`;
+
+            document.querySelectorAll('.dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+    </script>
+</body>
+
+</html>
