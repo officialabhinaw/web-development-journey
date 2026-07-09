@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 6</title>
     <style>
+        .back {
+            background-color: black;
+            border-radius: 10px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+
         .email-input {
             padding: 10px;
             ;
@@ -78,10 +85,127 @@
             margin: 5px 0;
             line-height: 1.4;
         }
+
+        .Legal {
+            display: flex;
+            justify-content: space-between;
+            align-self: self-start;
+            gap: 40px;
+            padding: 40px;
+            text-align: start;
+            margin-left: 80px;
+            background-color: black;
+            border-radius: 15px;
+            margin-right: 80px;
+            color: white;
+        }
+
+        .Legal a:hover {
+            text-decoration: underline;
+        }
+
+        .leftt {
+            color: white;
+        }
+
+        .Legal a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .over {
+            text-align: start;
+            margin-left: 70px;
+            color: white;
+        }
+
+        .rule {
+            text-align: end;
+            margin-right: 80px;
+            color: white;
+        }
+
+        .top {
+            background-color: yellow;
+            text-align: center;
+            top: 0px;
+            position: fixed;
+            z-index: 1001;
+            top: 0px;
+            width: 100%;
+
+        }
+
+        .topp {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            padding: 15px 40px;
+            justify-content: space-between;
+            width: 1280px;
+            height: 40px;
+            background-color: bisque;
+            margin-left: 70px;
+            margin-right: 40px;
+            top: 60px;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        .topp ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0px;
+            padding-top: 140px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 40px;
+            
+        }
     </style>
 </head>
 
 <body>
+    <div class="top">
+        <h2>UE Core & Enterprise Subscriptions: Get 10% Off on your second year-
+            <a href="https://www.ultraedit.com/pricing">Buy now</a>
+        </h2>
+
+    </div>
+    <div class="topp">
+        <ol class="logo">UltraEdit</ol>
+        <div class="nav-links">
+            <ol>product</ol>
+            <ol>Buy</ol>
+            <ol>Renew</ol>
+            <ol>Support</ol>
+            <ol>Learn</ol>
+            <ol>Compony</ol>
+        </div>
+        <div class="nav-right"></div>
+        <ol>Download </ol>
+        <ol> English</ol>
+    </div>
+    </div>
     <div class="zero">
         <h2 style="font-size: 50px;">
             Download UltraEdit for Windows
@@ -266,7 +390,7 @@
                     <input type="email" placeholder="" class="email-input">
                     <h2>
                         <button class="subscribe-button">
-                            SIGN UP
+                            <a href="https://www.ultraedit.com/newsletter/?nm=confirmed&nk=1615-25fc9d4583">Sign up</a>
                         </button>
                     </h2>
                 </div>
@@ -319,19 +443,75 @@
                 </h3>
             </div>
         </div>
-        <div class="news">
-            <div class="left">
-                <h1>UltraEdit</h1>
-                <h3>UltraEdit is the powerful text editor built for</h3>
-                <h3>developers, data wranglers, and IT pros handling</h3>
-                <h3>large files and complex tasks.</h3>
+        <div class="back">
+            <div class="Legal">
+                <div class="leftt">
+                    <h1>UltraEdit</h1>
+                    <h3>UltraEdit is the powerful text editor built for</h3>
+                    <h3>developers, data wranglers, and IT pros handling</h3>
+                    <h3>large files and complex tasks.</h3>
+                </div>
+                <div class="three">
+                    <ol>
+                        <h2>Company
+                        </h2>
+                    </ol>
+                    <ol><a href="https://www.ultraedit.com/company/about-us/">About us</a></ol>
+                    <ol><a href="https://www.ultraedit.com/company/contact-us/">Contect us</a></ol>
+                </div>
+                <div class="three">
+                    <ol>
+                        <h2>product
+                        </h2>
+                    </ol>
+                    <ol><a href="https://www.ultraedit.com/products/ultraedit/">ultraedit(windows/mac/linus)</a></ol>
+                    <ol><a href="https://www.ultraedit.com/products/ultracompare/">ultracompare</a></ol>
+                    <ol><a href="https://www.ultraedit.com/products/uestudio/">UEStudio</a></ol>
+                    <ol><a href="https://www.ultraedit.com/products/ultrafinder/">UltraFinder</a></ol>
+                    <ol><a href="https://www.ultraedit.com/products/ultraftp/">UltraFTP</a></ol>
+                    <ol><a href="https://www.ultraedit.com/downloads/">All product</a></ol>
+                </div>
+                <div class="three">
+                    <ol>
+                        <h2>Support
+                        </h2>
+                    </ol>
+                    <ol><a href="https://www.ultraedit.com/products/ultraedit/licenses-and-faqs/">Help centre</a></ol>
+                    <ol><a href="https://www.ultraedit.com/support/activation-faq/">Licensing and activation</a></ol>
+                    <ol><a href="https://www.ultraedit.com/support/">File a Support ticket</a></ol>
+                    <ol><a href="https://wiki.ultraedit.com/Main_Page?">Documantation</a></ol>
+                    <ol><a href="https://forums.ultraedit.com/">Comunity and forms</a></ol>
+                </div>
+                <div class="three">
+                    <ol>
+                        <h2>Legal</h2>
+                    </ol>
+                    <ol><a href="https://www.ideracorp.com/Legal/PrivacyShield">Privacy policy</a></ol>
+                    <ol><a href="https://www.ultraedit.com/products/ultraedit/licenses-and-faqs#refunds">Refund
+                            policy</a>
+                    </ol>
+                    <ol><a href="https://www.ideracorp.com/legal/UltraEdit">License Agreament</a></ol>
+                </div>
+
             </div>
-            <div class="three">
-                <h2>Company
-                </h2>
-                <ol><a href="https://www.ultraedit.com/company/about-us/">About us</a></ol>
-                <ol><a href="https://www.ultraedit.com/company/contact-us/">Contect us</a></ol>
-                
+            <div class="over">
+                <ol>
+                    <h2>Newsletter Signup</h2>
+                </ol>
+                <ol>
+                    <h3>Stay updated on new features, tutorials, and exclusive offers.</h3>
+                </ol>
+                <ol></ol>
+                <h3>
+                    <input type="email" placeholder="" class="email-input">
+
+                    <button class="subscribe-button">
+                        <a href="https://www.ultraedit.com/newsletter/?nm=confirmed&nk=1615-25fc9d4583">Sign up</a>
+                    </button>
+
+                </h3>
+                </ol>
+                <h2 class="rule">© Copyright 2026, All Rights Reserved</h2>
             </div>
         </div>
     </div>
