@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body
+        {
+            background-color: #242020;
+        }
+        .container {
+            display: flex;
+            margin: 5px;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            width: 900px;
+            padding: 12px;
+        }
+
+        .card {
+            display: flex;
+            gap: 10px;
+        }
+
+        .imge img {
+            width: 200px;
+            display: block;
+            display: inline-block;
+        }
+
+        .imge {
+            position: relative;
+            line-height: 0;
+            display: inline block;
+        }
+
+        .capsule {
+            position: absolute;
+            z-index: 10;
+            bottom: 4px;
+            opacity: 0.9;
+            font-size: 14px;
+            border: 3px;
+            padding:4px 8px ;
+            color: white;
+            background-color: #242020;
+            right: 5px;
+            height: 12px;
+            line-height: 1.4;
+        }
+
+        .text.h1 {
+            padding: 2px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="imge">
+                <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw"
+                    alt="">
+                <div class="capsule">
+                    31.06
+                </div>
+            </div>
+            <div class="text">
+                <h2>Introduction to backend ! sigma web development course</h2>
+                <p>code with harry . 577k views . 2 month ago</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
